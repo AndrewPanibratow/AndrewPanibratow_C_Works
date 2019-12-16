@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-// LAB5 Variant17
+// LAB5 Variant16
 
 // Дана квадратна матриця порядку M. Замінити нулями елементи
 //матриці, що лежать 1) нижче головної 2) вище головної 3) нижче побічної; 4) вище побічної
