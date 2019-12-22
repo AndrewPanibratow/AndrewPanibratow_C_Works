@@ -45,8 +45,14 @@ namespace Lab6
                 Console.Write(i + " ");
             }
             Console.WriteLine("");
-            Console.WriteLine("Число 0 встречается "+C0+ " раз");
-            Console.WriteLine("Число 1 встречается " + C1+ " раз");
+            Console.WriteLine("Число 0 встречается " + C0 + " раз");
+            Console.WriteLine("Число 1 встречается " + C1 + " раз");
+            int[] array = new int[numbers.Count];
+            numbers.CopyTo(array);
+            for (int i = 0; i < numbers.Count; i++)
+            {
+                    Console.Write($"{array[i]} \t");
+            }
         }
     }
 }

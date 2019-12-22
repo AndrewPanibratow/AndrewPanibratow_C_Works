@@ -25,8 +25,8 @@ namespace Lab5
             }
             while (N < 3);
             int[,] massivus = new int[N,N];
-            int rows = massivus.GetUpperBound(0) + 1;
-            int columns = massivus.Length / rows;
+            //int rows = massivus.GetUpperBound(0) + 1;
+            //int columns = massivus.Length / rows;
             for (int i = 0; i < N; i++)
             {
                 for (int j = 0; j < N; j++)
@@ -34,9 +34,9 @@ namespace Lab5
                     massivus[i, j] = random.Next(10);
                 }
             }
-                for (int i = 0; i < rows; i++)
+                for (int i = 0; i < N; i++)
                 {
-                    for (int j = 0; j < columns; j++)
+                    for (int j = 0; j < N; j++)
                     {
                         Console.Write($"{massivus[i, j]} \t");
                     }
@@ -62,9 +62,9 @@ namespace Lab5
                             };
                             Z1++;
                         }
-                        for (int i = 0; i < rows; i++)
+                        for (int i = 0; i < N; i++)
                         {
-                            for (int j = 0; j < columns; j++)
+                            for (int j = 0; j < N; j++)
                             {
                                 Console.Write($"{massivus[i, j]} \t");
                             }
@@ -84,9 +84,9 @@ namespace Lab5
                             };
                             Z2++;
                         }
-                        for (int i = 0; i < rows; i++)
+                        for (int i = 0; i < N; i++)
                         {
-                            for (int j = 0; j < columns; j++)
+                            for (int j = 0; j < N; j++)
                             {
                                 Console.Write($"{massivus[i, j]} \t");
                             }
@@ -106,9 +106,9 @@ namespace Lab5
                             };
                             Z3--;
                         }
-                        for (int i = 0; i < rows; i++)
+                        for (int i = 0; i < N; i++)
                         {
-                            for (int j = 0; j < columns; j++)
+                            for (int j = 0; j < N; j++)
                             {
                                 Console.Write($"{massivus[i, j]} \t");
                             }
@@ -128,9 +128,9 @@ namespace Lab5
                             };
                             Z4--;
                         }
-                        for (int i = 0; i < rows; i++)
+                        for (int i = 0; i < N; i++)
                         {
-                            for (int j = 0; j < columns; j++)
+                            for (int j = 0; j < N; j++)
                             {
                                 Console.Write($"{massivus[i, j]} \t");
                             }
